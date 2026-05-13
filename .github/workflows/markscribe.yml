@@ -23,7 +23,7 @@ jobs:
 
       - name: Generate README
         run: |
-          markscribe -write README.md README.tpl
+          markscribe -write README.md README.tpl.md
         env:
           WAKATIME_API_KEY: ${{ secrets.HACKATIME_API_KEY }}
           WAKATIME_URL: https://hackatime.hackclub.com/api/v1/
