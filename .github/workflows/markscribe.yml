@@ -1,0 +1,15 @@
+name: Update README with Hackatime stats
+
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hackclub/markscribe@latest
+        with:
+          hackatime-api-key: ${{ secrets.HACKATIME_API_KEY }}

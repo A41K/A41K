@@ -1,1 +1,3 @@
-![Hackatime Stats](https://github-readme-stats.hackclub.dev/api/wakatime?username=17651&api_domain=hackatime.hackclub.com&theme=onedark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8)
+## ⏱ Hackatime Stats
+
+{{ wakatimeDoubleCategoryBar "Languages:" wakatimeData.Languages "Projects:" wakatimeData.Projects 5 }}
